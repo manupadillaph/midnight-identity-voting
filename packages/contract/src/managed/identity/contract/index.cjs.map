@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "file": "index.cjs",
+  "sourceRoot": "../../../",
+  "sources": ["identity.compact", "compiler/standard-library.compact"],
+  "names": [],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EAAA;;;;;;;;;;MAaA,AAAA,UAOC;;;;;;;;;;;;;;;;;;;;OAAA;MAGD,AAAA,UAGC;;;;cAHyB,SAAoB;;;;;;;;;;;;;;;;yCAApB,SAAoB;;;;;;;sEAApB,SAAoB;;;OAG7C;;;;;;GAAA;EA1BD;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAMA;;;;;;;;;;sBAAkD;IAClD;;;;;;;;;;sBAAwC;;;;;;;GAmBvC;ECED,AAAA,+CAAkC;kEAAA;;;EDlBlC,AAAA,iBAAmC;;sDAAnC,aAAmC;;;;;;;;;;;;;GAAA;EAGnC,AAAA,cAOC;oDANU;;;;;;;;;;;;;sEAAkB;;;;UAIzB,GAAQ;;;;IAAR;;;;;;;yGAAA,GAAQ;;;sBAAA;IACR;;;;;;;;;;sBAAkB;GACrB;EAGD,AAAA,cAGC,4BAHyB,SAAoB;mCACnC;;;;;;;;;;;;;qDAAkB;;;;kDAClB;;;;;;;;;;;;;oEAAQ;0BAAI,SAAS;GAC/B;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IApBD;qCAAA;;;;;;;;;;;;;uDAAkD;KAAA;IAClD;qCAAA;;;;;;;;;;;;;uDAAwC;KAAA;;;;;;;;;;;;;;"
+}

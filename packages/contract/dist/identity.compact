@@ -1,0 +1,27 @@
+import CompactStandardLibrary;
+
+// Represents KYC verification status
+export enum KYCStatus { unverified, verified }
+
+// Public state stored on chain
+export ledger verificationStatus: Cell<KYCStatus>;
+export ledger userHash: Cell<Bytes<32>>;
+
+// Private witness function to access user's private data
+witness get_user_data(): Bytes<32>;
+
+// Circuit to submit KYC proof
+export circuit submit_kyc(): Void {
+    assert verificationStatus == KYCStatus.unverified
+        "KYC already verified";
+    
+    // Hash of private user data
+    userHash = persistent_hash<Bytes<32>>(get_user_data());
+    verificationStatus = KYCStatus.verified;
+}
+
+// Circuit to verify someone's KYC status
+export circuit verify_kyc(user_hash: Bytes<32>): Boolean {
+    return verificationStatus == KYCStatus.verified && 
+           userHash == user_hash;
+}

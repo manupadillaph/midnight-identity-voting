@@ -1,0 +1,29 @@
+{
+  "circuits": [
+    {
+      "name": "submit_kyc",
+      "pure": false,
+      "arguments": [
+      ],
+      "result-type": {
+        "type-name": "Void"
+      }
+    },
+    {
+      "name": "verify_kyc",
+      "pure": false,
+      "arguments": [
+        {
+          "name": "user_hash",
+          "type": {
+            "type-name": "Bytes",
+            "length": 32
+          }
+        }
+      ],
+      "result-type": {
+        "type-name": "Boolean"
+      }
+    }
+  ]
+}
